@@ -3,7 +3,7 @@ function nameMenuItem(food) {
   return 'Delicious ' + food
 }
 
-//refer to line 42 and ask about parameter 1 "menuItemName"
+
 function createMenuItem(name, price, type) {
   return {name, price, type}
 }
@@ -14,10 +14,15 @@ function addIngredients(ingredient, ingredients =[]) {
 }
 
 
+
 //=================
 
-function formatPrice() {
+function formatPrice(price) {
+return `$${price}`
+}
 
+function decreasePrice(price) {
+  return price * (1 - 0.1)
 }
 
 module.exports = {
@@ -25,6 +30,6 @@ module.exports = {
   createMenuItem,
   addIngredients,
   formatPrice,
-  // decreasePrice,
+  decreasePrice,
   // createRecipe
 }
