@@ -8,9 +8,10 @@ function createMenuItem(name, price, type) {
   return {name, price, type}
 }
 
-function addIngredients(ingredient, ingredients =[]) {
-  if(!ingredients.includes(ingredient))
+function addIngredients(ingredient, ingredients) {
+  if(!ingredients.includes(ingredient)) {
   ingredients.push(ingredient)
+}
 }
 
 
