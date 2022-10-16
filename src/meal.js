@@ -1,6 +1,6 @@
 
 function nameMenuItem(food) {
-  return 'Delicious ' + food
+  return `Delicious ${food}`
 }
 
 
@@ -15,8 +15,6 @@ function addIngredients(ingredient, ingredients) {
 }
 
 
-
-//=================
 
 function formatPrice(price) {
 return `$${price}`
